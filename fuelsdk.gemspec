@@ -6,11 +6,11 @@ require 'fuelsdk/version'
 Gem::Specification.new do |spec|
 	spec.name          = "fuelsdk"
 	spec.version       = FuelSDK::VERSION
-	spec.authors       = ["MichaelAllenClark", "barberj", "kellyjandrews"]
-	spec.email         = ["code@exacttarget.com"]
+	spec.authors       = ["MichaelAllenClark", "barberj", "kellyjandrews", "andersondias"]
+	spec.email         = ["andersondaraujo@gmail.com"]
 	spec.description   = %q{API wrapper for SOAP and REST API with Salesforce Marketing Cloud (ExactTarget)}
 	spec.summary       = %q{Fuel Client Library for Ruby}
-	spec.homepage      = "https://github.com/ExactTarget/FuelSDK-Ruby"
+	spec.homepage      = "https://github.com/salesforce-marketingcloud/FuelSDK-Ruby"
 	spec.license       = ""
 
 	spec.files         = `git ls-files`.split($/)
@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
 	spec.add_development_dependency "guard", '~> 0'
 	spec.add_development_dependency "guard-rspec", '~> 0'
 
-	spec.add_dependency "savon", "2.2.0"
+	spec.add_dependency "savon", "~> 2.2"
 	spec.add_dependency "json", "~> 1.7"
-	spec.add_dependency "jwt", "~> 0.1.6"
+	spec.add_dependency "jwt", "~> 1.4"
 end
