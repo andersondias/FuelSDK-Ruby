@@ -239,7 +239,7 @@ module FuelSDK
 
 		def soap_cud action, object_type, properties, upsert=nil
 			message = {
-				'Objects' => properties.first.merge(:"@xsi:type" => 'tns:' + object_type)
+				'Objects' => properties.merge(:"@xsi:type" => 'tns:' + object_type),
 			}
 
 			if upsert
